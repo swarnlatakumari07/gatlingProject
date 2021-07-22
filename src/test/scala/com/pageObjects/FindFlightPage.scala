@@ -33,19 +33,19 @@ object FindFlightPage {
     .headers(headers_find_flight)
     .formParam("fromPort", "Philadelphia")
     .formParam("toPort", "Berlin")
-    .resources(http("req_6")
+    .resources(http("resource_6")
       .get("/assets/bootstrap.min.js")
       .headers(headers_resources),
-      http("req_7")
+      http("resource_7")
         .get("/assets/bootstrap-table.js")
         .headers(headers_resources),
-      http("req_8")
+      http("resource_8")
         .get("/assets/bootstrap.min.css")
         .headers(headers_resources),
-      http("req_9")
+      http("resource_9")
         .get("/assets/bootstrap-table.css")
         .headers(headers_resources),
-      http("req_10")
+      http("resource_10")
         .get("/favicon.ico")
         .headers(headers_resources))
     .check(status.is(200))

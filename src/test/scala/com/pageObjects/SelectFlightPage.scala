@@ -35,19 +35,19 @@ object SelectFlightPage {
         ("fromPort", "inputFromPort"),
         ("toPort", "inputToPort")
       ))
-    .resources(http("req_11")
+    .resources(http("resource_11")
       .get("/assets/bootstrap.min.js")
       .headers(headers_resource),
-      http("req_12")
+      http("resource_12")
         .get("/assets/bootstrap-table.js")
         .headers(headers_resource),
-      http("req_13")
+      http("resource_13")
         .get("/assets/bootstrap.min.css")
         .headers(headers_resource),
-      http("req_14")
+      http("resource_14")
         .get("/assets/bootstrap-table.css")
         .headers(headers_resource),
-      http("req_15")
+      http("resource_15")
         .get("/favicon.ico")
         .headers(headers_resource)
     )

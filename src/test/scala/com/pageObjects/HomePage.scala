@@ -41,19 +41,19 @@ object HomePage {
   val verifyHomePage = http("verify home page")
     .get(home_page)
     .headers(headers_home)
-    .resources(http("req_1")
+    .resources(http("resource_1")
       .get("/assets/bootstrap.min.js")
       .headers(headers_resources_1),
-      http("req_2")
+      http("resource_2")
         .get("/assets/bootstrap-table.js")
         .headers(headers_resources_1),
-      http("req_3")
+      http("resource_3")
         .get("/assets/bootstrap.min.css")
         .headers(headers_resources_1),
-      http("req_4")
+      http("resource_4")
         .get("/assets/bootstrap-table.css")
         .headers(headers_resources_1),
-      http("req_5")
+      http("resource_5")
         .get("/favicon.ico")
         .headers(headers_resources_2))
 }

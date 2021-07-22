@@ -1,6 +1,4 @@
-package blazemeter
-
-import scala.concurrent.duration._
+package com.testcases
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
